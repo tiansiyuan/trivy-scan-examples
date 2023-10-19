@@ -6,7 +6,7 @@ pipeline {
   stages {
     stage('Scan') {
       steps {
-        sh 'trivy config SBMOs/sbom-repo.spdx'
+        sh 'trivy config SBOMs/sbom-repo.spdx'
       }
     }
   }
