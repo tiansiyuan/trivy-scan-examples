@@ -6,7 +6,7 @@ pipeline {
   stages {
     stage('Scan') {
       steps {
-        sh 'trivy fs '/' --timeout 1800s all'
+        sh 'trivy fs "/" --timeout 1800s all'
       }
     }
   }
